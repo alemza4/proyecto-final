@@ -1,0 +1,50 @@
+header{
+    height: 100px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 8px 50px;
+}
+.logo{
+    height: 100px;
+    
+}
+nav ul{
+    z-index: 10000;
+    text-align: right;
+    margin-right:24px;
+
+      li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        text-shadow: 3px 3px 4px $color-titulos;
+}
+          a{ 
+            text-decoration: none;
+            color: $color-titulos;
+            font-size: 20px;
+            padding: 8px 15px;
+            border-radius: 6px;
+            text-transform: uppercase;
+        }
+            & li a.active, li a:hover{
+                background: $colorteriario;
+                opacity: 0.7;
+                transition: .5s;
+        }
+}
+.checkbtn{
+    font-size: 35px;
+    color: $color-titulos;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}

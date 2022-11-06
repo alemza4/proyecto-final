@@ -1,0 +1,59 @@
+.slide{
+    @include parametros (100%,none,auto);
+    z-index: 0;
+    margin-top: 50px;
+    .carousel-caption{
+        color:  $color-secundario;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 20px;}
+        h5 {
+            color: $color-secundario;
+            text-shadow: 8px 8px 8px #212F3C;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            justify-content: space-around;}
+             p { 
+                margin-bottom: 70px;
+                text-shadow: 8px 8px 8px #212F3C;
+                font-size: 22px;
+                font-weight: bold;}
+                 a{
+                     display: inline-block;
+                     text-decoration: none;
+                     width: 45px;
+                     height: 45px;
+                     line-height: 45px;
+                     color: $color-secundario;
+                     margin-right: 25px;
+                     background-color: $color-titulos;
+                     border-radius: 50%;
+                     opacity: 0.9;}
+                     li{
+                        font-weight: bold;
+                        color: $color-secundario;
+                        text-shadow: 8px 8px 8px #212F3C;
+                        font-size: 22px;
+                     }
+} 
+.carousel-control-prev-icon{
+    @include parametros (45px,45px,none);
+        background-color: $color-titulos;
+        border-radius: 50%;
+    }
+.carousel-control-next-icon{
+      @extend .carousel-control-prev-icon;
+}
+.carousel-indicators{
+    @include parametros (150px,none,auto);
+    background-color: $color-titulos;
+    border-radius: 30px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+   
+}
+.slide img {
+    @include parametros (100%,35em,none);
+    border-radius: 6px;
+}

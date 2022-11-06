@@ -1,0 +1,24 @@
+@mixin propiedades-grid($gridcolum,$gridrow,$gap){
+
+    display: grid;
+    grid-template-columns: $gridcolum;
+    grid-template-rows: $gridrow;
+    grid-gap: $gap;
+}
+@mixin propiedades-flex($direction,$justify,) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+@mixin reset-list($margin,$padding,$list,$box,$decoration){
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  @mixin parametros($ancho,$tall,$margen){
+    width: $ancho;
+    height: $tall;
+    margin: $margen;
+  }

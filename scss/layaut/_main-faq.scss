@@ -1,0 +1,36 @@
+
+.caja {
+  @include parametros (80%,80%,80px auto);
+    border-radius: 8px;
+    background: $color-titulos;
+	  opacity: 0.9;
+    border: 8px solid $colorteriario;
+     .titulo {
+      background:$color-titulos;
+         border-radius: 7px 7px 0px 0px;
+         font-size: 20px;
+         padding: 18px;
+         color: $color-secundario;
+         text-align: center;
+     }
+}
+  .caja .faqs {
+    padding: 0px 20px 20px;
+  }
+  .caja ::-webkit-details-marker {
+    margin-right: auto;
+    margin-top: 3px;
+  }
+  .caja details {
+    background:$color-secundario;
+    opacity: 0,7;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .caja summary {
+    outline: none;
+  }
